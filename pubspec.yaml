@@ -1,0 +1,66 @@
+name: rupiy
+description: "RUPIY - Personal Finance App"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+  flutter_svg: ^2.0.9
+  google_fonts: ^6.1.0
+
+  # State management
+  provider: ^6.1.1
+
+  # Database & Storage
+  sqflite: ^2.3.2
+  path: ^1.9.0
+  path_provider: ^2.1.1
+  shared_preferences: ^2.2.2
+
+  # Media & OCR
+  image_picker: ^1.0.7
+  google_mlkit_text_recognition: ^0.15.0
+
+  # Charts
+  fl_chart: ^0.66.0
+
+  # Date & Time
+  intl: ^0.20.2
+
+  # NFC (dipertahankan dari project lama)
+  nfc_manager: ^4.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # App icon generator
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/app_icon.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  web:
+    generate: true
+  windows:
+    generate: true
+  macos:
+    generate: true
+  image_path: assets/icon/app_icon.png
+  remove_alpha_ios: true
